@@ -1,0 +1,7 @@
+version: '2'
+services:
+  dnscrypt:
+    build: .
+    ports:
+      - "53:53"
+      - "53:53/udp"
