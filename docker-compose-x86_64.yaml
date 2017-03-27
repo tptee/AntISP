@@ -3,7 +3,7 @@ services:
   dnscrypt_x86_64:
     build:
       context: .
-      dockerfile: dockerfile.x86_64
+      dockerfile: Dockerfile.x86_64
     ports:
       - "53:53"
       - "53:53/udp"

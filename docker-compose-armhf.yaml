@@ -3,7 +3,7 @@ services:
   dnscrypt:
     build:
       context: .
-      dockerfile: dockerfile.armhf
+      dockerfile: Dockerfile.armhf
     ports:
       - "53:53"
       - "53:53/udp"
