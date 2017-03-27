@@ -1,7 +1,16 @@
-version: '2'
+version: '3'
 services:
-  dnscrypt:
-    build: .
+  dnscrypt_x86_64:
+    build:
+      context: .
+      dockerfile: dockerfile.x86_64
+    ports:
+      - "53:53"
+      - "53:53/udp"
+  dnscrypt_armhf:
+    build:
+      context: .
+      dockerfile: dockerfile.armhf
     ports:
       - "53:53"
       - "53:53/udp"
